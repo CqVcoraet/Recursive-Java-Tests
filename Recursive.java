@@ -58,7 +58,8 @@ public class Recursive {
     }
 
     public static void main(String[] args) {
-        BigInteger ultralong = new BigInteger("9,223,372,036,854,775,808");
+        BigInteger ultralong = new BigInteger("9,223,372,036,854,775,808".replace(",", ""));
+
         int num = 12345;
         int digits = (int) Math.log10(num) + 1;
         Console.println("Hello println!");
@@ -80,7 +81,7 @@ public class Recursive {
         Console.println(decToBin(666));
         Console.println(decToBinRecursion(10));
         Console.println(Integer.MAX_VALUE + 1);
-        Console.println((long)(Integer.MAX_VALUE + 1));
+        Console.println((long) Integer.MAX_VALUE + 1);
         Console.println(Long.MAX_VALUE + 1);
         Console.println(ultralong + "");
     }
